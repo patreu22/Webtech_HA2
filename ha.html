@@ -24,44 +24,88 @@
 	<main>
 		<h2>Kontakt</h2>
 		<form>
-			<fieldset>
-			<label for="anredeInput">Anrede</label>
-			<select id="anredeInput">
-  				<option value="Prof">Professor</option>
-  				<option value="Dr">Dr.</option>
-  			</select><br/>
-			<label for="nameInput">Name* </label>
-			<input type="text" id="nameInput" required/><br>
-			<label for="mailInput">Mail* </label>
-			<input type="text" id="mailInput" required/><br>
-			<label for="genderInput">Geschlecht* </label>
-			<select id="genderInput" required>
-  				<option value="Weiblich">Weiblich</option>
-  				<option value="Männlich">Männlich</option>
-  				<option value="Andere">Andere</option>
-  			</select></fieldset><br>
-  			<fieldset>
-  			<label for="telInput">Tel.:</label>
-  			<input type="tel" id="telInput"><br>
-  			<label for="pageInput">Webseite:</label>
-  			<input type="url" id="pageInput"><br>
-  			<label for="datumInput">Datum und Uhrzeit:</label>
-  			<input type="datetime-local" id="datumInput"><br>
-  			</fieldset>
-  			<fieldset>
-  				<label for="datumInput">Thema:</label><br>
-  				<input type="checkbox" value="">Webseite<br>
-  				<input type="checkbox" value="">Newsletter<br>
-  				<input type="checkbox" value="">Irgendwas kaufen<br>
-  				<input type="checkbox" value="">Treffen<br>
-  				<input type="checkbox" value="">Werben<br>
-  			</fieldset>
-  			<br>
-  		<fieldset>
-			<label for="betreffInput">Betreff* </label>
-			<input type="text" id="betreffInput" required/><br>
-			<label for="textInput">Nachricht* </label>
-			<textarea id="textInput" rows="10" cols="30">
+			<table>
+				<fieldset>
+				<tr>
+					<td><label for="anredeInput">Anrede</label></td>
+					<td>			
+						<select id="anredeInput">
+		  				<option value="Prof">Professor</option>
+		  				<option value="Dr">Dr.</option>
+		  				</select>
+				</tr>
+				<tr>
+					<td><label for="nameInput">Name* </label></td>
+					<td><input type="text" id="nameInput" required/><br></td>
+				</tr>
+				<tr>
+					<td><label for="mailInput">Mail* </label></td>
+					<td><input type="text" id="mailInput" required/><br></td>
+				</tr>
+				<tr>
+					<td><label for="genderInput">Geschlecht* </label></td>
+					<td>
+						<select id="genderInput" required>
+		  				<option value="Weiblich">Weiblich</option>
+		  				<option value="Männlich">Männlich</option>
+		  				<option value="Andere">Andere</option>
+		  				</select>
+		  			</td>
+				</tr>
+				</fieldset>
+				<fieldset>
+				<tr>
+					<td><label for="telInput">Tel.</label></td>
+					<td><input type="tel" id="telInput"></td>
+				</tr>
+				<tr>
+					<td><label for="pageInput">Webseite</label></td>
+					<td><input type="url" id="pageInput"><br></td>
+				</tr>
+				<tr>
+					<td><label for="datumInput">Datum und Uhrzeit</label></td>
+					<td><input type="datetime-local" id="datumInput"><br></td>
+				</tr>
+				</fieldset>
+				<fieldset>
+				<tr>
+					<td><label for="datumInput">Thema</label></td>
+					<td><input type="checkbox" value="">Webseite<br>
+  						<input type="checkbox" value="">Newsletter<br>
+			  			<input type="checkbox" value="">Irgendwas kaufen<br>
+			  			<input type="checkbox" value="">Treffen<br>
+			  			<input type="checkbox" value="">Werben<br>
+			  		</td>
+				</tr>
+				</fieldset>
+				<fieldset>
+				<tr>
+					<td><label for="dateiInput">Datei auswählen:</label></td>
+					<td><input id="dateiInput" type="file" ><br></td>
+				</tr>
+				<tr>
+					<td><label for="dateiInput">Farbe:</label></td>
+					<td><input type="color" id="colorInput" value="#ff0000"></td>
+				</tr>
+				</fieldset>
+				<fieldset>
+					<tr>
+						<td><label for="betreffInput">Betreff* </label></td>
+						<td><input type="text" id="betreffInput" required/><br></td>
+					</tr>
+					<tr>
+						<td><label for="textInput">Nachricht* </label></td>
+						<td><textarea id="textInput" rows="10" cols="30" placeholder="Gib hier deine Nachricht ein"></textarea></td>
+					</tr>
+				</fieldset>
+				
+			</table>
+			
+			
+			
+
+			
+
 			</textarea><br>
 		</fieldset><br><br>
 			<input type="submit" value="Submit" />
