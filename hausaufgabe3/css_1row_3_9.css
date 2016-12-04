@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    display: block;
+}
+
+body{
+    width: 100%;
+    display: block;
+}
+
+article{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+nav{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+aside{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    width: 100%;
+    display: block;
+}

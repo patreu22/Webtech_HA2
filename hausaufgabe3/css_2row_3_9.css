@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+    display: block;
+}
+
+body{
+    width: 100%;
+    display: block;
+}
+
+nav{
+    float: left;
+}
+
+article{
+    width: 80%;
+    float: left;
+}
+
+.nav-col{
+    width: 15%;
+}
+
+.article-col{
+    width: 85%;
+}
+
+
+.row::after {
+ content: "";
+ clear: both;
+ display: block;
+} 
